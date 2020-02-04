@@ -10,9 +10,8 @@ import SocketIO
 
 class MessagesSocketIOManager: MessagesSocket {
     weak var delegate: CFSocketClientDelegate?
-    let manager: SocketManager
-    
-    var socket: SocketIOClient
+    private let manager: SocketManager
+    private let socket: SocketIOClient
     
     init(urlString: String) {
         self.manager = SocketManager(socketURL: URL(string: urlString)!, config: [.log(true), .compress])
