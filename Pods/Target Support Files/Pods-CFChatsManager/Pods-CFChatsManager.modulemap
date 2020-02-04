@@ -1,0 +1,6 @@
+framework module Pods_CFChatsManager {
+  umbrella header "Pods-CFChatsManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
