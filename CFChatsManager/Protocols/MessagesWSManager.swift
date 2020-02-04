@@ -8,8 +8,8 @@
 
 import Starscream
 
-class MessagesWSManager: MessagesSocket {
-    weak var delegate: CFSocketClientDelegate?
+class MessagesWSManager: CFMessagesSocket {
+    weak var delegate: CFMessagesSocketDelegate?
     private let socket: WebSocket
     
     init(socket: WebSocket) {

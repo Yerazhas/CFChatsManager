@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol CFSocketClientDelegate: class {
+protocol CFMessagesSocketDelegate: class {
     func didReceiveMessage(message: String)
     func didReceiveError(error: Error)
     func didReceiveData(data: Data)

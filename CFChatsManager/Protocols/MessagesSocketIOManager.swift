@@ -8,8 +8,8 @@
 
 import SocketIO
 
-class MessagesSocketIOManager: MessagesSocket {
-    weak var delegate: CFSocketClientDelegate?
+class MessagesSocketIOManager: CFMessagesSocket {
+    weak var delegate: CFMessagesSocketDelegate?
     private let manager: SocketManager
     private let socket: SocketIOClient
     

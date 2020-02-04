@@ -12,10 +12,10 @@ class BaseMessagesViewController<Message: CFMessage>: UIViewController {
     private var messages = [Message]()
     private var currentPage: Int = 1
     private var limit: Int = 10
-    private let messagesSocket: MessagesSocket
+    private let messagesSocket: CFMessagesSocket
     private let parser: CFParser
     
-    init(messagesSocket: MessagesSocket, parser: CFParser) {
+    init(messagesSocket: CFMessagesSocket, parser: CFParser) {
         self.messagesSocket = messagesSocket
         self.parser = parser
         super.init(nibName: nil, bundle: nil)
@@ -53,7 +53,7 @@ class BaseMessagesViewController<Message: CFMessage>: UIViewController {
     }
 }
 
-extension BaseMessagesViewController: CFSocketClientDelegate {
+extension BaseMessagesViewController: CFMessagesSocketDelegate {
     func didReceiveMessage(message: String) {
         guard let data = message.data(using: .utf8) else { return }
         handleMessageData(data: data)

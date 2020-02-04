@@ -6,11 +6,10 @@
 //  Copyright © 2020 Yerassyl Zhassuzakhov. All rights reserved.
 //
 
-import Foundation
 import Starscream
 import SocketIO
 
-protocol MessagesSocket: class {
+protocol CFMessagesSocket: class {
     var delegate: CFSocketClientDelegate? { get set }
     
     func connect()

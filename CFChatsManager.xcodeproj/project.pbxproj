@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6000BA7823E7275D00924DC3 /* MessagesSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BA7723E7275D00924DC3 /* MessagesSocket.swift */; };
+		6000BA7823E7275D00924DC3 /* CFMessagesSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BA7723E7275D00924DC3 /* CFMessagesSocket.swift */; };
 		601360CB23E71A6300D578F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601360CA23E71A6300D578F6 /* AppDelegate.swift */; };
 		601360D423E71A6D00D578F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601360D323E71A6D00D578F6 /* Assets.xcassets */; };
 		601360D723E71A6D00D578F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601360D523E71A6D00D578F6 /* LaunchScreen.storyboard */; };
-		601BB1DE23E98F4100FC3C27 /* CFSocketClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BB1DD23E98F4100FC3C27 /* CFSocketClientDelegate.swift */; };
+		601BB1DE23E98F4100FC3C27 /* CFMessagesSocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BB1DD23E98F4100FC3C27 /* CFMessagesSocketDelegate.swift */; };
 		601BB1E023E994A800FC3C27 /* MessagesSocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BB1DF23E994A800FC3C27 /* MessagesSocketIOManager.swift */; };
 		601BB1E223E994C600FC3C27 /* MessagesWSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BB1E123E994C600FC3C27 /* MessagesWSManager.swift */; };
 		601BB1E523E994F500FC3C27 /* BaseMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BB1E423E994F500FC3C27 /* BaseMessagesViewController.swift */; };
@@ -22,13 +22,13 @@
 
 /* Begin PBXFileReference section */
 		489BEA1F7FF2456F2FD8F744 /* Pods_CFChatsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CFChatsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6000BA7723E7275D00924DC3 /* MessagesSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesSocket.swift; sourceTree = "<group>"; };
+		6000BA7723E7275D00924DC3 /* CFMessagesSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFMessagesSocket.swift; sourceTree = "<group>"; };
 		601360C723E71A6300D578F6 /* CFChatsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFChatsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		601360CA23E71A6300D578F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		601360D323E71A6D00D578F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		601360D623E71A6D00D578F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		601360D823E71A6D00D578F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		601BB1DD23E98F4100FC3C27 /* CFSocketClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFSocketClientDelegate.swift; sourceTree = "<group>"; };
+		601BB1DD23E98F4100FC3C27 /* CFMessagesSocketDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFMessagesSocketDelegate.swift; sourceTree = "<group>"; };
 		601BB1DF23E994A800FC3C27 /* MessagesSocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesSocketIOManager.swift; sourceTree = "<group>"; };
 		601BB1E123E994C600FC3C27 /* MessagesWSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesWSManager.swift; sourceTree = "<group>"; };
 		601BB1E423E994F500FC3C27 /* BaseMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMessagesViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +53,8 @@
 		6000BA7223E71E2F00924DC3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				6000BA7723E7275D00924DC3 /* MessagesSocket.swift */,
-				601BB1DD23E98F4100FC3C27 /* CFSocketClientDelegate.swift */,
+				6000BA7723E7275D00924DC3 /* CFMessagesSocket.swift */,
+				601BB1DD23E98F4100FC3C27 /* CFMessagesSocketDelegate.swift */,
 				601BB1DF23E994A800FC3C27 /* MessagesSocketIOManager.swift */,
 				601BB1E123E994C600FC3C27 /* MessagesWSManager.swift */,
 				601BB1E623E9951A00FC3C27 /* CFMessage.swift */,
@@ -236,8 +236,8 @@
 				601BB1E723E9951A00FC3C27 /* CFMessage.swift in Sources */,
 				601BB1E023E994A800FC3C27 /* MessagesSocketIOManager.swift in Sources */,
 				601BB1E923E9973D00FC3C27 /* CFParser.swift in Sources */,
-				6000BA7823E7275D00924DC3 /* MessagesSocket.swift in Sources */,
-				601BB1DE23E98F4100FC3C27 /* CFSocketClientDelegate.swift in Sources */,
+				6000BA7823E7275D00924DC3 /* CFMessagesSocket.swift in Sources */,
+				601BB1DE23E98F4100FC3C27 /* CFMessagesSocketDelegate.swift in Sources */,
 				601BB1E223E994C600FC3C27 /* MessagesWSManager.swift in Sources */,
 				601BB1E523E994F500FC3C27 /* BaseMessagesViewController.swift in Sources */,
 				601360CB23E71A6300D578F6 /* AppDelegate.swift in Sources */,
